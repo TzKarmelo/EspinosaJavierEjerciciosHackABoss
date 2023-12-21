@@ -1,6 +1,6 @@
 # EspinosaJavierEjerciciosHackABoss
 
-##Ejercicios prácticos bootcamp HackABoss
+## Ejercicios prácticos bootcamp HackABoss
 
 Repositorio de ejercicios prácticos del bootcamp de HackABoss! En este repositorio encontrarás una serie de ejercicios realizados a lo largo de mi curso.
 
