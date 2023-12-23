@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 22-12-2023 a las 20:48:13
+-- Tiempo de generación: 23-12-2023 a las 14:35:36
 -- Versión del servidor: 8.0.31
 -- Versión de PHP: 8.0.26
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `estudiantes` (
   `edad` int NOT NULL,
   `calificacion` double NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Volcado de datos para la tabla `estudiantes`
