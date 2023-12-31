@@ -6,7 +6,7 @@ public class InvalidProductNameException extends RuntimeException{
 
     public InvalidProductNameException(String nombre) {
         
-        super(String.format("El nombre del producto contiene dígitos o caracteres", nombre));
+        super(String.format("\nEl nombre del producto contiene dígitos o caracteres", nombre));
         
         this.nombre = nombre;
     }   

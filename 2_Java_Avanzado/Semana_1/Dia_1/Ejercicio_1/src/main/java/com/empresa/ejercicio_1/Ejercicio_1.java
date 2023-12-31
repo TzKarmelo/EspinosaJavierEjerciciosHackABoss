@@ -19,8 +19,7 @@ public class Ejercicio_1 {
         } catch (ReservaInvalidaException e) {
             
             e.printStackTrace();
-            System.out.println("\nHas ingresado en el primer catch");
-            
+                        
         } catch (InputMismatchException e) {
             
             e.printStackTrace();

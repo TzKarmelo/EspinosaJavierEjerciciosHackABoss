@@ -122,6 +122,7 @@ public class ReservaService {
             System.out.println("\nReserva realizada.");
         }
 
+        sc.close();
         return reserva;
     }
 

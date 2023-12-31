@@ -1,15 +1,15 @@
 package com.empresa.ejercicio_2.models;
 
-public class Producto {
+public class Product {
     
     private String nombre;
     private double precio;
     private int cantidad;
 
-    public Producto() {
+    public Product() {
     }
 
-    public Producto(String nombre, double precio, int cantidad) {
+    public Product(String nombre, double precio, int cantidad) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
