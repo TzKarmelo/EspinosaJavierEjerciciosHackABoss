@@ -119,7 +119,7 @@ public class ReservaService {
         if(reserva.getAsientos() > asientosDisponibles) {
             throw new ReservaInvalidaException(reserva.getNombre(), reserva.getDestino(), reserva.getFecha_viaje(), reserva.getAsientos());
         } else {
-            System.out.println("Reserva realizada.");
+            System.out.println("\nReserva realizada.");
         }
 
         return reserva;
