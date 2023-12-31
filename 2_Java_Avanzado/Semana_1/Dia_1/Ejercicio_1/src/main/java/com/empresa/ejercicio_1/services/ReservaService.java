@@ -19,7 +19,7 @@ public class ReservaService {
         boolean validacionNombre = false;
         
         do {
-            System.out.println("\nIngrese su nombre completo: ");
+            System.out.print("\nIngrese su nombre completo: ");
             String nombre = sc.next();
 
             if (nombre.trim().isEmpty()) {
@@ -28,7 +28,7 @@ public class ReservaService {
                 if (!nombre.matches(".*\\d.*") && nombre.matches("[a-zA-ZñÑáéíóúÁÉÍÓÚ\\s]+")) {
                     validacionNombre = true;
                 } else {
-                    System.out.println("\nEl nombre contiene dígitos o carácteres especiales. Ingrese un nombre válido.");
+                    System.out.println("\nEl nombre contiene dígitos o caracteres especiales. Ingrese un nombre válido.");
                 }
             }
 
@@ -41,8 +41,8 @@ public class ReservaService {
         boolean validacionDestino = false;
 
         do {
-            System.out.println("\nIngrese el destino: ");
-            String destino = sc.nextLine();
+            System.out.print("\nIngrese el destino: ");
+            String destino = sc.next();
 
             if (destino.trim().isEmpty()) {
                 System.out.println("\nNo ha ingresado nada. Por favor, ingrese un destino válido.");
@@ -50,7 +50,7 @@ public class ReservaService {
                 if (!destino.matches(".*\\d.*") && destino.matches("[a-zA-ZñÑáéíóúÁÉÍÓÚ\\s]+")) {
                     validacionDestino = true;
                 } else {
-                    System.out.println("\nEl destino contiene dígitos o carácteres especiales. Ingrese un destino válido.");
+                    System.out.println("\nEl destino contiene dígitos o caracteres especiales. Ingrese un destino válido.");
                 }
             }
 
@@ -95,7 +95,7 @@ public class ReservaService {
         
         do {
             System.out.print("\n\tIngrese el número de asientos: ");
-            String input = sc.nextLine();
+            String input = sc.next();
 
             if (input.isEmpty()) {
                 System.out.println("\nNo ha ingresado nada. Por favor, ingrese un número válido.");
@@ -104,7 +104,7 @@ public class ReservaService {
                     asientos = Integer.parseInt(input);
                     validacionAsientos = true;
                 } else {
-                    System.out.println("\nEl número de asientos contiene carácteres no válidos. Ingrese un número válido.");
+                    System.out.println("\nEl número de asientos contiene caracteres no válidos. Ingrese un número válido.");
                 }
             }
 
@@ -118,6 +118,8 @@ public class ReservaService {
         
         if(reserva.getAsientos() > asientosDisponibles) {
             throw new ReservaInvalidaException(reserva.getNombre(), reserva.getDestino(), reserva.getFecha_viaje(), reserva.getAsientos());
+        } else {
+            System.out.println("Reserva realizada.");
         }
 
         return reserva;

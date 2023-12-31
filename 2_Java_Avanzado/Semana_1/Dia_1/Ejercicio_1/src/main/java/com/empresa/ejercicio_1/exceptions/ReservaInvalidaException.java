@@ -9,14 +9,6 @@ public class ReservaInvalidaException extends RuntimeException{
     private LocalDate fecha_viaje;
     private int asientos;
 
-    public ReservaInvalidaException() {
-        super();
-    }    
-
-    public ReservaInvalidaException(String message) {
-        super(message);
-    }
-
     public ReservaInvalidaException(String nombre, String destino, LocalDate fecha_viaje, int asientos) {
         super(String.format("Sr. %s, el vuelo con destino %s el dia %s, no tiene %s disponibles.", nombre, destino, fecha_viaje, asientos));
         this.nombre = nombre;
