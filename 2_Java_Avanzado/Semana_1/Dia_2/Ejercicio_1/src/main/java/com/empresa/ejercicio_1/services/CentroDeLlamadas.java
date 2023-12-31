@@ -12,7 +12,7 @@ public class CentroDeLlamadas {
     public synchronized void recibirLlamada(Cliente cliente) {
         llamadas.add(cliente);
         System.out.println("Llamada recibida de " + cliente.getNombre());
-        atenderLlamada(); // Intenta atender la llamada inmediatamente
+        atenderLlamada(); 
     }
 
     public synchronized void atenderLlamada() {
@@ -20,9 +20,9 @@ public class CentroDeLlamadas {
             Cliente cliente = llamadas.get(indiceLlamada);
             System.out.println("Llamada de " + cliente.getNombre() + " atendida por " + Thread.currentThread().getName());
             indiceLlamada++;
-            // Simulación de atención de llamada
+            
             try {
-                Thread.sleep(3000); // Tiempo de simulación de la llamada (3 segundos)
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
