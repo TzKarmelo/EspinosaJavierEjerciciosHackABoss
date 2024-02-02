@@ -40,9 +40,11 @@ public class CalificacionesService implements ICalificacionesService{
     public List<CalificacionesDTO> obtenerCalificaciones() {
 
         Collections.sort(calificaciones, Comparator.comparingDouble(Calificaciones::getPromedio).reversed());
+
         CalificacionesDTO calificacionesDTO = new CalificacionesDTO();
 
         List<CalificacionesDTO> calificacionesDTOList = new ArrayList<>();
+
         for (Calificaciones calificacion : calificaciones) {
 
             calificacionesDTO.setCalificacion1(calificacion.getCalificacion1());

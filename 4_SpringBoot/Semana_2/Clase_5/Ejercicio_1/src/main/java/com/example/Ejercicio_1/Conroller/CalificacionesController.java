@@ -21,7 +21,7 @@ public class CalificacionesController {
 
     @GetMapping("/calificaciones/{num_matricula}")
     @ResponseBody
-    public Calificaciones obtenerCalificaciones(Integer num_matricula) {
+    public Calificaciones obtenerCalificaciones(@RequestBody Integer num_matricula) {
 
         return calificacionesService.obtenerCalificaciones(num_matricula);
     }
